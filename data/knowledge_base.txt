@@ -1,0 +1,12 @@
+Retrieval-Augmented Generation (RAG) is a technique where an AI assistant first retrieves relevant context from a knowledge base and then uses that context to answer a question.
+
+A chatbot built with RAG usually has three core parts:
+1. Document ingestion and chunking.
+2. A retriever that finds relevant chunks for a user query.
+3. An answer generator that writes a final response using those chunks.
+
+Cosine similarity over TF-IDF vectors is a lightweight way to build a retriever for small or medium text collections.
+
+When there is not enough supporting context, the chatbot should say that it does not have enough information rather than hallucinating.
+
+You can improve answer quality by adding more documents to the knowledge base and re-indexing.
